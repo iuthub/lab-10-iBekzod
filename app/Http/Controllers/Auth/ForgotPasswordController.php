@@ -25,6 +25,8 @@ class ForgotPasswordController extends Controller
      *
      * @return void
      */
+    protected $redirectTo = '/admin';
+    
     public function __construct()
     {
         $this->middleware('guest');
